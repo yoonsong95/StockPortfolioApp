@@ -1,0 +1,35 @@
+﻿
+
+@{
+    ViewBag.Title = "Watchlist";
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    <div class="col-md-12">
+        @{
+            Html.RenderPartial("_WatchlistTable");
+        }
+    </div>
+</div>
+<h2>Watchlist Transaction</h2>
+<div class="row">
+    <div class="col-md-12">
+        @{
+            Html.RenderPartial("_WatchlistStockTransactionForm");
+        }
+    </div>
+</div>
+
+
+<style>
+    form > div {
+        display: flex;
+    }
+
+    .formButtonContainer {
+        align-self: flex-end;
+    }
+</style>
+
+

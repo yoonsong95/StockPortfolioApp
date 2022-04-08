@@ -1,0 +1,24 @@
+﻿<!-- TODO: Also need to make Form ACTION dynamic (depending on whether Adding or Removing Stock from Portfolio or Watchlist-->
+
+
+<form id="WatchlistTransactionForm" method="post" action="WatchlistTransactionSubmit">
+    @Html.AntiForgeryToken()
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label for="TransactionType">Type</label>
+            <select class="form-control" id="TransactionType" name="TransactionType" required>
+                <option value="">Select</option>
+                <option value="Add">Add</option>
+                <option value="Remove">Remove</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="Ticker">Ticker</label>
+            <input type="text" class="form-control" id="Ticker" name="Ticker" autocomplete="off" required />
+        </div>
+        <div class="form-group col-md-3 formButtonContainer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+</form>
+

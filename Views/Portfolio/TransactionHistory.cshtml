@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Transaction History";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        @{
+            Html.RenderPartial("_PortfolioStockTransactionHistoryTable");
+        }
+    </div>
+</div>
+
+<div class="row pageNavButtonsContainer">
+    <div class="col-md-12">
+        <a href="/Portfolio/Index" class="btn btn-info">Back</a>
+    </div>
+</div>
+ 

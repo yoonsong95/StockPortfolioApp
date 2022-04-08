@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Portfolio</h3>
+        @{ 
+            Html.RenderPartial("_PortfolioTable");
+        }
+    </div>
+    <div class="col-md-12">
+        <h3>Performance Metrics</h3>
+        <p>performance metrics page goes here</p>
+    </div>
+    <div class="col-md-12">
+        <h3>Watchlist</h3>
+        @{ 
+            Html.RenderPartial("_WatchlistTable");
+        }
+    </div>
+    <div class="col-md-6">
+        <h3>News</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur similique, eligendi numquam iure nobis placeat reiciendis, sit suscipit totam odio quasi corporis impedit aliquam soluta dolorum rerum incidunt ea?</p>
+    </div>
+    <div class="col-md-6">
+        <h3>Important Dates</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur similique, eligendi numquam iure nobis placeat reiciendis, sit suscipit totam odio quasi corporis impedit aliquam soluta dolorum rerum incidunt ea?</p>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿
+
+@{
+    ViewBag.Title = "Portfolio";
+}
+
+
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    <div class="col-md-12">
+        @{
+            Html.RenderPartial("_PortfolioTable");
+        }
+    </div>
+</div>
+<h2>Stock Transaction</h2>
+<div class="row">
+    <div class="col-md-12">
+        @{
+            Html.RenderPartial("_PortfolioStockTransactionForm");
+        }
+    </div>
+</div>
+<h2>Performance & History</h2>
+<div class="row">
+    <div class="col-md-12">
+        <a href="/Portfolio/PerformanceMetrics" class="btn btn-primary">Performance Metrics</a>
+        <a href="/Portfolio/TransactionHistory" class="btn btn-primary">Transaction History</a>
+    </div>
+</div>
+
+
+
+<style>
+    form > div {
+        display: flex;
+    }
+
+    .formButtonContainer {
+        align-self: flex-end;
+    }
+</style>
+
+

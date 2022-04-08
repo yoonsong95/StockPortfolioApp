@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Portfolio Manager</h1>
+</div>
+
+
+
+<div class="pageNavDivsContainer">
+    <a href="/Portfolio/Index">Portfolio</a>
+    <a href="/Watchlist/Index">Watchlist</a>
+    <a href="/Stock/Index">Stock</a>
+    <a href="/Home/Dashboard">Dashboard</a>
+    <a href="/Home/News">News</a>
+    <a href="/Home/ImportantDates">ImportantDates</a>
+    <a href="/Home/About">About</a>
+    <a href="/Home/Contact">Contact</a>
+</div>
+
+
+<style>
+    .pageNavDivsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+        .pageNavDivsContainer > a {
+            height: 200px;
+            width: 200px;
+            background-color: bisque;
+            text-align: center;
+        }
+</style>
+
+
