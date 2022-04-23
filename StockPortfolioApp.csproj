@@ -127,6 +127,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Stock.cs" />
+    <Compile Include="Models\StockTransaction.cs" />
+    <Compile Include="Models\WatchlistTransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -165,14 +169,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Portfolio\BuyStock.cshtml" />
-    <Content Include="Views\Portfolio\SellStock.cshtml" />
     <Content Include="Views\Portfolio\PerformanceMetrics.cshtml" />
     <Content Include="Views\Portfolio\TransactionHistory.cshtml" />
     <Content Include="Views\Portfolio\Index.cshtml" />
     <Content Include="Views\Watchlist\Index.cshtml" />
-    <Content Include="Views\Watchlist\AddStock.cshtml" />
-    <Content Include="Views\Watchlist\RemoveStock.cshtml" />
     <Content Include="Views\Stock\Index.cshtml" />
     <Content Include="Views\Stock\StockInfo.cshtml" />
     <Content Include="Views\Stock\FinancialMetrics.cshtml" />
@@ -182,13 +182,12 @@
     <Content Include="Views\Home\ImportantDates.cshtml" />
     <Content Include="Views\Shared\_PortfolioTable.cshtml" />
     <Content Include="Views\Shared\_WatchlistTable.cshtml" />
-    <Content Include="Views\Watchlist\_WatchlistStockTransactionForm.cshtml" />
-    <Content Include="Views\Portfolio\_PortfolioStockTransactionForm.cshtml" />
-    <Content Include="Views\Portfolio\_PortfolioStockTransactionHistoryTable.cshtml" />
+    <Content Include="Views\Shared\_WatchlistStockTransactionForm.cshtml" />
+    <Content Include="Views\Shared\_PortfolioStockTransactionForm.cshtml" />
+    <Content Include="Views\Shared\_PortfolioStockTransactionHistoryTable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
